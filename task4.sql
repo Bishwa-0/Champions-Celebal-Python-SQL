@@ -1,0 +1,4 @@
+SELECT 
+dob,
+TIMESTAMPDIFF(YEAR, STR_TO_DATE(dob, '%Y-%m-%d'), CURDATE()) AS age
+FROM TABLE;
